@@ -1,0 +1,44 @@
+.section2 {
+	background: #0b0c22/*Paeg2背景颜*/ 
+}
+.section3 {
+	background: #0b0c22/*颜色自定义*/
+}
+.section4 {
+	background: #0b0c22/*颜色自定义*/
+}
+.section6 {
+	background: #0b0c22/*颜色自定义*/
+}
+.section7 {
+	background: #0b0c22/*颜色自定义*/
+}
+.section7  .footer{
+	background: #0a0a1b/*颜色自定义*/
+}
+
+.btbicon {
+    position: relative;
+}
+.btbicon .btbicon-content {
+	width: 800px;
+    /*border: 5px solid #ffebb0;*/
+    padding: 40px;
+    color: #ffebb0;
+    position: absolute;
+    top: 45%;
+    left: 27.5%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    z-index: 15;
+    text-align: center;
+}
+.btbicon .section1-footer{
+	width: 500px;
+    border: 1px solid #ffebb0;
+    padding: 25px;
+    background: #ffebb0;
+    color: #000;
+    margin: 40px auto;
+    margin-bottom: -80px;
+}

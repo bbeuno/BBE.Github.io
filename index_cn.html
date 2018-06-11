@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bgColor.css">
+    <title>BBE</title>
+    <script>
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var isPhone = detectmob();
+        if (isPhone) {
+            window.location.href = 'h5/index.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active">
+            <a href="#page1" style="font-weight:600;font-size:16px;">比特区块链</a>
+        </li>
+        <li class="li-btn li-btn2">
+            <div class="btn-group">
+                <span type="button" class=" selectBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    简体中文&nbsp;
+                    <img src="images/select.png" alt="" style="height:7px">
+                </span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="index_en.html">English</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="li-btn li-btn1">
+            <a href="http://www.bbe.uno/bbe_zh_cn.pdf" style="color:#000;padding:1px;">
+                <img src="images/download.png" class="download-icon" style="height:14px"> &nbsp;下载白皮书
+            </a>
+        </li>
+    </ul>
+    <div id="dowebok">
+        <div class="section section1">
+            <div class="btbicon">
+                <div class="btbicon-content">
+                    <h1 id="section1-title" class="section1-title">欢迎来到</h1>
+                    <h2 id="section1-content" class="section1-content">比特区块链交易所</h2>
+                    <div id="section1-footer" class="section1-footer"><h2>交易大厅即将开放</h2></div>
+                </div> 
+                              
+                <canvas id="canv"></canvas> 
+                <div id="particles-js" class="particles-container particles-js"></div>
+            </div>
+            <div style="clear:both;"></div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.bundle4963.js"></script>
+<script type="text/javascript" src="js/script4963.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/h5.css">
+    <link rel="stylesheet" href="..css/bgColor.css">
+    <title>BBE</title>
+    <script>
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var isPhone = detectmob();
+        if (!isPhone) {
+            window.location.href = '../index_en.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="btb-app">
+        <div class="btb-app-header" id="btb-app-header-en">
+            <img src="../h5/h5.JPG" class="btb-app-header-img" />
+            <div class="btb-app-header-btn">
+                <div class="btb-app-header-btn-download">
+                    <a type="button" id="download" class="download btn en">
+
+                        <img src="../h5/download.png" class="download-icon" />
+                        <span>&nbsp;&nbsp;BBE WhitePaper</span>
+                    </a>
+                </div>
+                <div class="btb-app-header-btn-switch dropdown">
+                    <a id="dropdownBtn" type="button" class="btn selectBtn en" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>English&nbsp;</span>
+                        <img src="../h5/switch.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownBtn" style="min-width:120px">
+
+                        <li>
+                            <a href="index.html">简体中文</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div style="clear:both"></div>
+        <div class="btb-app-footer">
+            <div class="icons">
+                <div class="rows">
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="Twitter.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="telegram.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a  href="#" target="_blank">
+                            <img src="m.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadows">
+    </div>
+    <div class="tips">
+        <img src="../images/h5/dialog.en.png" alt="">
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script>
+    var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
+    var Uu = false;
+    if (ua.match(/MicroMessenger/i) == "micromessenger" || ua.match(/WeiBo/i) == "weibo" || ua.match(/QQ/i) == "qq") {
+        Uu = true;
+    } else {
+        Uu = false;
+    }
+    $('#download').click(function () {
+        if (Uu) {
+            $('.shadows').css('display', 'block').next().css('display', 'block');
+        } else {
+            window.open("http://www.bbe.uno/bbe_zh_cn.pdf");
+        }
+    })
+    $('.shadows').click(function () {
+        $('.shadows').css('display', 'none').next().css('display', 'none');
+    })
+</script>
+
+</html>
